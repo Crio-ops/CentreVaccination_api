@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+//SERVLET - DEFAULT       
+    <servlet>
+        <servlet-name>ServletVaccination</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletVaccination</servlet-class>
+    </servlet>
+//SERVLET - AJOUT DE CITOYENS     
+    <servlet>
+        <servlet-name>ServletAddCitoyens</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletAddCitoyens</servlet-class>
+    </servlet>
+//SERVLET - AJOUT DE VACCINS        
+    <servlet>
+        <servlet-name>ServletAddVaccins</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletAddVaccins</servlet-class>
+    </servlet>
+//SERVLET - ENREGISTREMENT CITOYEN      
+    <servlet>
+        <servlet-name>ServletRegisterCitoyens</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletRegisterCitoyens</servlet-class>
+    </servlet>
+//SERVLET - LOGIN Citoyens    
+    <servlet>
+        <servlet-name>ServletLoginCitoyens</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletLoginCitoyens</servlet-class>
+    </servlet>
+
+SERVLET - LOGOUT       
+    <servlet>
+        <servlet-name>ServletLogOut</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletLogOut</servlet-class>
+    </servlet>
+
+//SERVLET - AJOUT PC VAC CENTRE       
+    <servlet>
+        <servlet-name>ServletAddPersonnelCentre</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletAddPersonnelCentre</servlet-class>
+    </servlet>
+//SERVLET - PRISE DE RDV PATIENT        
+    <servlet>
+        <servlet-name>ServletPriseRdvPatient</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletPriseRdvPatient</servlet-class>
+    </servlet>
+//SERVLET - CONFIRMATION RDV VACCIN          
+    <servlet>
+        <servlet-name>ServletConfirmationRdvVaccin</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletConfirmationRdvVaccin</servlet-class>
+    </servlet>
+//SERVLET - ACCUEIL PATIENT         
+    <servlet>
+        <servlet-name>ServletAccueilPatientPourVacc</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletAccueilPatientPourVacc</servlet-class>
+    </servlet>
+//SERVLET - LOGIN ADMIN         
+    <servlet>
+        <servlet-name>ServletLoginAdmin</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletLoginAdmin</servlet-class>
+    </servlet>
+//SERVLET - RDV DOSE 2        
+    <servlet>
+        <servlet-name>ServletConfirmationRdvDose2</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletConfirmationRdvDose2</servlet-class>
+    </servlet>
+//SERVLET - SORTIE PATIENT ACCUEIL D1     
+    <servlet> 
+        <servlet-name>ServletSortiePatientAccueil_Dose1</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletSortiePatientAccueil_Dose1</servlet-class>
+    </servlet> 
+//SERVLET - SORTIE PATIENT ACCUEIL D2      
+    <servlet>
+        <servlet-name>ServletSortiePatientAccueil_Dose2</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletSortiePatientAccueil_Dose2</servlet-class>
+    </servlet> 
+//SERVLET - VUE PATIENT       
+    <servlet>
+        <servlet-name>ServletVuePatient</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletVuePatient</servlet-class>
+    </servlet> 
+//SERVLET - CHANGEMENT DE MOT DE PASSE       
+    <servlet>
+        <servlet-name>ServletCitoyensChangePassword</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletCitoyensChangePassword</servlet-class>
+    </servlet> 
+//SERVLET - Liste des citoyens       
+    <servlet>
+        <servlet-name>ServletListeCitoyens</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletListeCitoyens</servlet-class>
+    </servlet> 
+    
+//SERVLET - Info Citoyens pour la D2       
+    <servlet>
+        <servlet-name>ServletPriseRdvPatientD2</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletPriseRdvPatientD2</servlet-class>
+    </servlet>
+//SERVLET - Liste Personnel       
+    <servlet>
+        <servlet-name>ServletListePersonnel</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletListePersonnel</servlet-class>
+    </servlet>
+//SERVLET - DELETE Personnel       
+    <servlet>
+        <servlet-name>ServletDeletePersonnelCentre</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletDeletePersonnelCentre</servlet-class>
+    </servlet>
+//MAPPING - DEFAULT    
+    <servlet-mapping> 
+        <servlet-name>ServletVaccination</servlet-name>
+        <url-pattern>/PostmanVaccination</url-pattern>
+    </servlet-mapping>
+//MAPPING - Liste des Citoyens    
+    <servlet-mapping> 
+        <servlet-name>ServletListeCitoyens</servlet-name>
+        <url-pattern>/ServletListeCitoyens</url-pattern>
+    </servlet-mapping>
+//MAPPING - AJOUT DE CITOYENS   
+    <servlet-mapping>
+        <servlet-name>ServletAddCitoyens</servlet-name>
+        <url-pattern>/ServletAddCitoyens</url-pattern>
+    </servlet-mapping>
+//MAPPING - AJOUT DE VACCINS
+    <servlet-mapping>
+        <servlet-name>ServletAddVaccins</servlet-name>
+        <url-pattern>/PostmanAddVaccins</url-pattern>
+    </servlet-mapping>
+// MAPPING - ENREGISTREMENT CITOYEN
+     <servlet-mapping>
+        <servlet-name>ServletRegisterCitoyens</servlet-name>
+        <url-pattern>/PostmanRegisterCitoyens</url-pattern>
+    </servlet-mapping>
+// MAPPING - LOGIN CITOYEN
+     <servlet-mapping>
+        <servlet-name>ServletLoginCitoyens</servlet-name>
+        <url-pattern>/ServletLoginCitoyens</url-pattern>
+    </servlet-mapping>
+    //MAPPING - LOGOUT    
+    <servlet-mapping>
+        <servlet-name>ServletLogOut</servlet-name>
+        <url-pattern>/ServletLogOut</url-pattern>
+    </servlet-mapping>
+
+    //MAPPING - AJOUT DE PERSONNEL    
+    <servlet-mapping>
+        <servlet-name>ServletAddPersonnelCentre</servlet-name>
+        <url-pattern>/ServletAddPersonnelCentre</url-pattern>
+    </servlet-mapping>
+    //MAPPING - PRISE DE RDV PATIENT    
+    <servlet-mapping>
+        <servlet-name>ServletPriseRdvPatient</servlet-name>
+        <url-pattern>/ServletPriseRdvPatient</url-pattern> 
+    </servlet-mapping>
+//MAPPING - CONFIRMATION RDV VACCIN    
+    <servlet-mapping>
+        <servlet-name>ServletConfirmationRdvVaccin</servlet-name>
+        <url-pattern>/ServletConfirmationRdvVaccin</url-pattern>
+    </servlet-mapping>
+//MAPPING - DEFAULT    
+    <servlet-mapping>
+        <servlet-name>ServletAccueilPatientPourVacc</servlet-name>
+        <url-pattern>/PostmanAccueilPatientPourVacc</url-pattern>
+    </servlet-mapping>
+//MAPPING - LOGIN ADMIN    
+    <servlet-mapping>
+        <servlet-name>ServletLoginAdmin</servlet-name>
+        <url-pattern>/ServletLoginAdmin</url-pattern>
+    </servlet-mapping>
+//MAPPING - RDV DOSE  2  
+    <servlet-mapping>
+        <servlet-name>ServletConfirmationRdvDose2</servlet-name>
+        <url-pattern>/ServletConfirmationRdvDose2</url-pattern>
+    </servlet-mapping>
+//MAPPING - SORTIE ACCUEIL PAtIENT D1 
+    <servlet-mapping>
+        <servlet-name>ServletSortiePatientAccueil_Dose1</servlet-name>
+        <url-pattern>/PostmanSortiePatientAccueil_Dose1</url-pattern>
+    </servlet-mapping>
+//MAPPING - SORTIE ACCUEIL PAtIENT D2 
+    <servlet-mapping>
+        <servlet-name>ServletSortiePatientAccueil_Dose2</servlet-name>
+        <url-pattern>/PostmanSortiePatientAccueil_Dose2</url-pattern>
+    </servlet-mapping>
+//MAPPING - VUE PATIENT 
+    <servlet-mapping>
+        <servlet-name>ServletVuePatient</servlet-name>
+        <url-pattern>/ServletVuePatient</url-pattern>
+    </servlet-mapping>
+//MAPPING - CHANGEMENT DE MOT DE PASSE 
+    <servlet-mapping>
+        <servlet-name>ServletCitoyensChangePassword</servlet-name>
+        <url-pattern>/PostmanCitoyensChangePassword</url-pattern>
+    </servlet-mapping>
+//MAPPING - Prise rdv D2    
+    <servlet-mapping> 
+        <servlet-name>ServletPriseRdvPatientD2</servlet-name>
+        <url-pattern>/ServletPriseRdvPatientD2</url-pattern>
+    </servlet-mapping>
+//MAPPING - Liste Personnel    
+    <servlet-mapping> 
+        <servlet-name>ServletListePersonnel</servlet-name>
+        <url-pattern>/ServletListePersonnel</url-pattern>
+    </servlet-mapping>
+    
+//MAPPING - DELETE Personnel    
+    <servlet-mapping> 
+        <servlet-name>ServletDeletePersonnelCentre</servlet-name>
+        <url-pattern>/ServletDeletePersonnelCentre</url-pattern>
+    </servlet-mapping>
+    
+//SERVLET - Créer un centre de vaccination     
+    <servlet>
+        <servlet-name>ServletCreateCentre</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletCreateCentre</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletCreateCentre</servlet-name>
+        <url-pattern>/ServletCreateCentre</url-pattern>
+    </servlet-mapping>
+    
+    //SERVLET - Afficher les centres de vaccination     
+    <servlet>
+        <servlet-name>ServletAfficherLesCentres</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletAfficherLesCentres</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletAfficherLesCentres</servlet-name>
+        <url-pattern>/ServletAfficherLesCentres</url-pattern>
+    </servlet-mapping>
+    
+    //SERVLET - Patient choisi un centre de vaccination    
+    <servlet>
+        <servlet-name>ServletPatientChoisiUnCentre</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletPatientChoisiUnCentre</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletPatientChoisiUnCentre</servlet-name>
+        <url-pattern>/ServletPatientChoisiUnCentre</url-pattern>
+    </servlet-mapping>  
+    
+//SERVLET - Afficher liste des Rdv du jour  
+    <servlet>
+        <servlet-name>ServletGetRdvDateSelection</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletGetRdvDateSelection</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletGetRdvDateSelection</servlet-name>
+        <url-pattern>/ServletGetRdvDateSelection</url-pattern>
+    </servlet-mapping>   
+
+//SERVLET - Afficher Valider présence patient RDv1 
+    <servlet>
+        <servlet-name>ServletValiderPresencePatient</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletValiderPresencePatient</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletValiderPresencePatient</servlet-name>
+        <url-pattern>/ServletValiderPresencePatient</url-pattern>
+    </servlet-mapping>
+
+//SERVLET - Rdv du jour via enss 
+    <servlet>
+        <servlet-name>ServletGetRdvPatientViaEnss</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletGetRdvPatientViaEnss</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletGetRdvPatientViaEnss</servlet-name>
+        <url-pattern>/ServletGetRdvPatientViaEnss</url-pattern>
+    </servlet-mapping>
+    
+//SERVLET - Rdv du jour via enss 
+    <servlet>
+        <servlet-name>ServletValiderPresencePatientRdv2</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletValiderPresencePatientRdv2</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletValiderPresencePatientRdv2</servlet-name>
+        <url-pattern>/ServletValiderPresencePatientRdv2</url-pattern>
+    </servlet-mapping>
+    
+//SERVLET - Liste tickets
+    <servlet>
+        <servlet-name>ServletGetListeDesTickets</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletGetListeDesTickets</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletGetListeDesTickets</servlet-name>
+        <url-pattern>/ServletGetListeDesTickets</url-pattern>
+    </servlet-mapping>
+    
+//SERVLET - Valider La Prise En Charge 
+    <servlet>
+        <servlet-name>ServletValiderLaPriseEnCharge</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletValiderLaPriseEnCharge</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletValiderLaPriseEnCharge</servlet-name>
+        <url-pattern>/ServletValiderLaPriseEnCharge</url-pattern>
+    </servlet-mapping>  
+    
+//SERVLET - Cloturer un ticket apres rdv par le medecin / infirmier 
+    <servlet>
+        <servlet-name>ServletCloturerLeTicket</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletCloturerLeTicket</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletCloturerLeTicket</servlet-name>
+        <url-pattern>/ServletCloturerLeTicket</url-pattern>
+    </servlet-mapping>
+    
+//SERVLET - Afficher le patient pris en charge
+    <servlet>
+        <servlet-name>ServletGetTicketPatient</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletGetTicketPatient</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletGetTicketPatient</servlet-name>
+        <url-pattern>/ServletGetTicketPatient</url-pattern>
+    </servlet-mapping>    
+
+    
+//SERVLET - Valider la vaccination par l'Op de sortie
+    <servlet>
+        <servlet-name>ServletValiderLaVaccination</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletValiderLaVaccination</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletValiderLaVaccination</servlet-name>
+        <url-pattern>/ServletValiderLaVaccination</url-pattern>
+    </servlet-mapping>
+    
+//SERVLET - Valider la vaccination par l'Op de sortie
+    <servlet>
+        <servlet-name>ServletInfoPersonnelPourRdvVaccination</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletInfoPersonnelPourRdvVaccination</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletInfoPersonnelPourRdvVaccination</servlet-name>
+        <url-pattern>/ServletInfoPersonnelPourRdvVaccination</url-pattern>
+    </servlet-mapping> 
+    
+//SERVLET - Vue de sa vaccination par le patient
+    <servlet>
+        <servlet-name>ServletVueVaccinationPatient</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletVueVaccinationPatient</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletVueVaccinationPatient</servlet-name>
+        <url-pattern>/ServletVueVaccinationPatient</url-pattern>
+    </servlet-mapping>
+    
+//SERVLET - Statistique Etat vaccinal des patients
+    <servlet>
+        <servlet-name>ServletStatistiqueEtatVaccinationPatient</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletStatistiqueEtatVaccinationPatient</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletStatistiqueEtatVaccinationPatient</servlet-name>
+        <url-pattern>/ServletStatistiqueEtatVaccinationPatient</url-pattern>
+    </servlet-mapping>   
+    
+//SERVLET - Pointage Personnel Entree
+    <servlet>
+        <servlet-name>Servlet_Pointage_Personnel</servlet-name>
+        <servlet-class>bac.hermant.controller.Servlet_Pointage_Personnel</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>Servlet_Pointage_Personnel</servlet-name>
+        <url-pattern>/Servlet_Pointage_Personnel</url-pattern>
+    </servlet-mapping> 
+    
+//SERVLET - Pointage Personnel SORTIE
+    <servlet>
+        <servlet-name>Servlet_Pointage_Sortie</servlet-name>
+        <servlet-class>bac.hermant.controller.Servlet_Pointage_Sortie</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>Servlet_Pointage_Sortie</servlet-name>
+        <url-pattern>/Servlet_Pointage_Sortie</url-pattern>
+    </servlet-mapping>  
+    
+//SERVLET - Liste horaire pointage personnel
+    <servlet>
+        <servlet-name>ServletGetListePointagePersonnel</servlet-name>
+        <servlet-class>bac.hermant.controller.ServletGetListePointagePersonnel</servlet-class>
+    </servlet>
+  
+    <servlet-mapping> 
+        <servlet-name>ServletGetListePointagePersonnel</servlet-name>
+        <url-pattern>/ServletGetListePointagePersonnel</url-pattern>
+    </servlet-mapping>   
+                                                                
+</web-app> 
